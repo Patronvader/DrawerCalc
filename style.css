@@ -24,6 +24,7 @@ header {
 
 input {
     background: #e5e5e5;
+    font-size: 14px;
 }
 
 h3 {
@@ -62,7 +63,7 @@ div#wrapper {
 }
 
 div#inputBox {
-    width: 75%;
+    width: 85%;
     height: 10%;
     margin: auto;
     padding-left: 1%;
