@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <title>JM Drawer Tool</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Drawer Calculator</h1>
+        </div>
+        <div id="instructions">
+            <h2>Enter Number of Bills:</h3>
+        </div>
+        <form id="moneyInput">
+            <div id="inputBox">
+                <span>Amount of $100's:</span>
+                <input type="value" placeholder="If there are no 100's enter 0" id="100" onkeyup="calcNum(event); dispNum(); finalNumber(); checkNumbs(this);">
+                <span class="num" id="100disp">0</span>
+            </div>
+            <div id="inputBox">
+                <span>Amount of $50's:</span>
+                <input type="value" placeholder="If there are no 50's enter 0" id="50" onkeyup="calcNum(event); dispNum(); finalNumber(); checkNumbs(this);">
+                <span class="num" id="50disp">0</span>
+            </div>
+            <div id="inputBox">
+                <span>Amount of $20's:</span>
+                <input type="value" placeholder="# of 20's" id="20" onkeyup="calcNum(event); dispNum(); finalNumber(); checkNumbs(this);">
+                <span class="num" id="20disp">0</span>
+            </div>
+            <div id="inputBox">
+                <span>Amount of $10's:</span>
+                <input type="value" placeholder="# of 10's" id="10" onkeyup="calcNum(event); dispNum(); finalNumber(); checkNumbs(this);">
+                <span class="num" id="10disp">0</span>
+            </div>
+            <div id="inputBox">
+                <span>Amount of $5's:</span>
+                <input type="value" placeholder="# of 5's" id="5" onkeyup="calcNum(event); dispNum(); finalNumber(); checkNumbs(this);">
+                <span class="num" id="5disp">0</span>
+            </div>
+            <div id="inputBox">
+                <span>Amount of $1's:</span>
+                <input type="value" placeholder="# of 1's + rolls of coins" id="1" onkeyup="calcNum(event); dispNum(); finalNumber(); checkNumbs(this);">
+                <span class="num" id="1disp">0</span>
+            </div>
+            <div id="inputBox">
+                <span>Amount of Quarters:</span>
+                <input type="value" placeholder="# of Quarters" id=".25" onkeyup="calcNum(event); dispNum(); finalNumber(); checkNumbs(this);">
+                <span class="num" id=".25disp">0</span>
+            </div>
+            <div id="inputBox">
+                <span>Amount of Dimes:</span>
+                <input type="value" placeholder="# of Dimes" id=".1" onkeyup="calcNum(event); dispNum(); finalNumber(); checkNumbs(this);">
+                <span class="num" id=".1disp">0</span>
+            </div>
+            <div id="inputBox">
+                <span>Amount of Nickels:</span>
+                <input type="value" placeholder="# of Nickels" id=".05" onkeyup="calcNum(event); dispNum(); finalNumber(); checkNumbs(this);">
+                <span class="num" id=".05disp">0</span>
+            </div>
+            <!--div>
+                <span>Amount of Pennies:</span>
+                <input type="value" placeholder="# of Pennies" id=".01" onkeyup="calcNum(event); dispNum();">
+                <span class="num" id=".01disp">0</span>
+            </div-->
+            <div id="totalReset">
+                <div id="textReset">
+                    <span id="dollarSign1">Total: $</span>
+                    <span id="totalNumber">0</span>
+                </div>
+                <input id="resetButton" type="reset" name="resetBtn" onclick="resetAll();">
+            </div>
+        </form>
+        <div id="lastStep">
+            <div id="instructions">
+                <h2>Amount to Drop:</h3>
+                <h3>Subtract $300 from your total</h4>
+            </div>
+            <div id="textFinal">
+                <span id="dollarSign2">$</span>
+                <span id="dropAmount">0</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
