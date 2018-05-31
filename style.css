@@ -114,6 +114,13 @@ div#textFinal {
 
 }
 
+div#boxBorder {
+    border: 3px groove #e80404;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+}
+
 span#dollarSign1 {
     margin-right: -4px;
 
